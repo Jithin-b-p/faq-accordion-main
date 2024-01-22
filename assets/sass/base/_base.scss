@@ -1,0 +1,14 @@
+body {
+  font-family: "Work Sans";
+}
+
+.main {
+  min-height: 100svh;
+  background-image: url(../images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

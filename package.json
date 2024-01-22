@@ -1,0 +1,14 @@
+{
+  "name": "faq-accordion-main",
+  "version": "1.0.0",
+  "description": "This is an faq section",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass ./assets/sass/main.scss ./assets/css/style.css -w"
+  },
+  "author": "Jithin B P",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

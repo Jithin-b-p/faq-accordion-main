@@ -1,0 +1,45 @@
+.accordion {
+  width: min(90%, 40rem);
+  padding-inline: 3rem;
+  background-color: #fff;
+
+  border-radius: 10px;
+
+  &__title-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    order: 1;
+  }
+
+  &__star {
+    width: 2.5rem;
+  }
+
+  &__qna {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__question-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-block-start: 2rem;
+  }
+
+  &__question {
+    &--plus {
+    }
+
+    &--minus {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__answer {
+    padding-block: 2rem;
+  }
+}
