@@ -1,14 +1,15 @@
 .accordion {
-  width: min(90%, 40rem);
-  padding-inline: 3rem;
+  width: min(90%, 37.5rem);
+  padding-inline: clamp(1.8rem, 1.6rem + 1vi, 2.5rem);
+  padding-block: 1.5rem;
   background-color: #fff;
-
-  border-radius: 10px;
+  border-radius: clamp(0.5rem, 0.375rem + 0.625vi, 0.9375rem);
+  box-shadow: 0rem 1rem 3rem hsl(292, 42%, 20%, 0.2);
 
   &__title-container {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   &__title {
@@ -16,10 +17,14 @@
   }
 
   &__star {
-    width: 2.5rem;
+    width: clamp(1.5rem, 1.2143rem + 1.4286vi, 2.5rem);
   }
 
   &__qna {
+    padding-block: 1.5rem;
+  }
+
+  &__qna:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -27,19 +32,14 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-block-start: 2rem;
+    gap: clamp(0rem, 1.5429rem + -1.7143vi, 1.2rem);
   }
 
-  &__question {
-    &--plus {
-    }
-
-    &--minus {
-      position: absolute;
-      right: 0;
-    }
-  }
   &__answer {
-    padding-block: 2rem;
+    padding-block-start: 1rem;
+    color: hsl(292, 16%, 50%);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, height;
+    will-change: opacity, contents;
   }
 }
